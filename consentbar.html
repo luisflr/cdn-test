@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div
-  id="mainDiv"
-  style="position: fixed; bottom: 32px; left: 0; right: 0; z-index: 3; background-color: white; gap: 16px; width: fit-content; padding: 12px 16px 12px 16px; border-radius: 14px; margin-left: auto; margin-right: auto;"
->
-  <div class="text-black px-1">
-    <p class="text-black">
-      ¡Hola! Almacenamos cookies con el objetivo de mejorar y personalizar tu
-      experiencia de navegación.
-    </p>
-    <p>
-      Para conocer más acerca de las cookies consulta
-      <a href="/legal" style="color: aqua;">aquí</a>
-    </p>
-  </div>
-
-  <button
-    id="rejectButton"
-    style="background-color: white; color: blue; font-size: 14px; line-height: 20px; border: solid 1px blue; font-weight: bold; border-radius: 24px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; width: fit-content;"
-    >Rechazo las cookies</button
-  >
-  <button
-    id="acceptButton"
-    style="background-color: white; color: blue; font-size: 14px; line-height: 20px; border: solid 1px blue; font-weight: bold; border-radius: 24px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; width: fit-content;"
-    >Acepto las cookies</button
-  >
-</div>
-
-<script type="text/javascript">
-  const mainDiv = document.getElementById("mainDiv");
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title></head><body><div id="mainDiv" style="position:fixed;bottom:32px;left:0;right:0;z-index:3;background-color:#fff;gap:16px;width:fit-content;padding:12px 16px 12px 16px;border-radius:14px;margin-left:auto;margin-right:auto"><div class="text-black px-1"><p class="text-black">¡Hola! Almacenamos cookies con el objetivo de mejorar y personalizar tu experiencia de navegación.</p><p>Para conocer más acerca de las cookies consulta<a href="/legal" style="color:#0ff">aquí</a></p></div><button id="rejectButton" style="background-color:#fff;color:#00f;font-size:14px;line-height:20px;border:solid 1px #00f;font-weight:700;border-radius:24px;padding-left:16px;padding-right:16px;padding-top:8px;padding-bottom:8px;width:fit-content">Rechazo las cookies</button><button id="acceptButton" style="background-color:#fff;color:#00f;font-size:14px;line-height:20px;border:solid 1px #00f;font-weight:700;border-radius:24px;padding-left:16px;padding-right:16px;padding-top:8px;padding-bottom:8px;width:fit-content">Acepto las cookies</button></div><script type="text/javascript">const mainDiv = document.getElementById("mainDiv");
 
   document.getElementById("rejectButton").addEventListener("click", () => {
     mainDiv.classList.toggle("sm:flex");
@@ -42,7 +6,4 @@
 
   document.getElementById("acceptButton").addEventListener("click", () => {
     mainDiv.classList.toggle("sm:flex");
-  });
-</script>
-</body>
-</html>
+  });</script></body></html>
